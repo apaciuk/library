@@ -14,7 +14,9 @@ gem "puma", "~> 5.0"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
-
+# Rabl is a JSON templating language for Ruby objects,in json, xml
+gem 'rabl'
+gem 'oj'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 

@@ -1,4 +1,6 @@
 class BooksController < ApplicationController
+include ActionController::HttpAuthentication::Token::ControllerMethods
+include ActionController::Cacheing
   before_action :set_book, only: %i[ show update destroy ]
 
   # GET /books
@@ -9,7 +11,7 @@ class BooksController < ApplicationController
 
   # GET /books/1
   # GET /books/1.json
-  def show
+  def show 
   end
 
   # POST /books
